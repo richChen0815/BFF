@@ -1,0 +1,36 @@
+{
+  "name": "BFF",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "NODE_MODE=development nodemon ./app.js",
+    "build": "NODE_MODE=production nodemon ./app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-body": "^6.1.0",
+    "copy-to": "^2.0.1",
+    "inflation": "^2.0.0",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "koa-swig": "^2.2.1",
+    "koa2-cors": "^2.0.6",
+    "log4js": "^6.3.0",
+    "mysql": "^2.18.1",
+    "raw-body": "^2.4.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}

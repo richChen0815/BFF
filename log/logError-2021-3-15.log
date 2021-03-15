@@ -1,0 +1,1288 @@
+[2021-03-15T00:43:58.309] [ERROR] globalError - err Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where cid = 2405 and gid = 2416' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:61:30)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:24)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where cid = 2405 and gid = 2416' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `UPDATE  _gestation_info SET dueTimeDay = STR_TO_DATE('2021-03-14',"%Y-%m-%d")   where where cid = 2405 and gid = 2416`
+}
+[2021-03-15T00:43:58.311] [ERROR] globalError - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where cid = 2405 and gid = 2416' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:61:30)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:24)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where cid = 2405 and gid = 2416' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `UPDATE  _gestation_info SET dueTimeDay = STR_TO_DATE('2021-03-14',"%Y-%m-%d")   where where cid = 2405 and gid = 2416`
+}
+[2021-03-15T01:40:22.555] [ERROR] globalError - err Error: connect ETIMEDOUT
+    at Connection._handleConnectTimeout (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:409:13)
+    at Object.onceWrapper (events.js:421:28)
+    at Socket.emit (events.js:315:20)
+    at Socket._onTimeout (net.js:481:8)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:116:18)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:7:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.gestationModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:26:27)
+    at getGestationInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:48:45)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2021-03-15T01:40:22.559] [ERROR] globalError - err Error: connect ETIMEDOUT
+    at Connection._handleConnectTimeout (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:409:13)
+    at Object.onceWrapper (events.js:421:28)
+    at Socket.emit (events.js:315:20)
+    at Socket._onTimeout (net.js:481:8)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:116:18)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:7:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.gestationModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:26:27)
+    at getGestationInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:48:45)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2021-03-15T01:40:22.560] [ERROR] globalError - Error: connect ETIMEDOUT
+    at Connection._handleConnectTimeout (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:409:13)
+    at Object.onceWrapper (events.js:421:28)
+    at Socket.emit (events.js:315:20)
+    at Socket._onTimeout (net.js:481:8)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:116:18)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:7:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.gestationModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:26:27)
+    at getGestationInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:48:45)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+[2021-03-15T10:39:14.191] [ERROR] globalError - err Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:48:27)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'1000000',)`
+}
+[2021-03-15T10:39:14.193] [ERROR] globalError - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:48:27)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'1000000',)`
+}
+[2021-03-15T10:40:23.860] [ERROR] globalError - err Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:48:27)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'1',0,'',)`
+}
+[2021-03-15T10:40:23.861] [ERROR] globalError - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:48:27)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'1',0,'',)`
+}
+[2021-03-15T10:41:40.250] [ERROR] globalError - err Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:48:27)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'1',0,'',)`
+}
+[2021-03-15T10:41:40.251] [ERROR] globalError - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:48:27)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'1',0,'',)`
+}
+[2021-03-15T10:47:45.678] [ERROR] globalError - err Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:48:27)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '22' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (22,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'vvvv',500)`
+}
+[2021-03-15T10:47:45.679] [ERROR] globalError - Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:48:27)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '22' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (22,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'vvvv',500)`
+}
+[2021-03-15T10:50:23.113] [ERROR] globalError - err Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:48:27)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '22' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (22,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'',110)`
+}
+[2021-03-15T10:50:23.115] [ERROR] globalError - Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:48:27)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '22' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (22,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'',110)`
+}
+[2021-03-15T10:52:18.619] [ERROR] globalError - err Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:50:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '22' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (22,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'dd',11)`
+}
+[2021-03-15T10:56:53.864] [ERROR] globalError - err Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '22' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (22,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'xxx',11)`
+}
+[2021-03-15T10:56:53.879] [ERROR] globalError - error Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '22' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (22,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'xxx',11)`
+}
+[2021-03-15T10:59:21.515] [ERROR] globalError - err Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '22' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (22,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'xxx',11)`
+}
+[2021-03-15T10:59:21.529] [ERROR] globalError - error Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '22' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (22,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'xxx',11)`
+}
+[2021-03-15T11:00:22.145] [ERROR] globalError - err Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '22' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (22,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'',11)`
+}
+[2021-03-15T11:00:22.160] [ERROR] globalError - error Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '22' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (22,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'',11)`
+}
+[2021-03-15T11:05:00.051] [ERROR] globalError - err Error: ER_DUP_ENTRY: Duplicate entry '33' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '33' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (33,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'',11)`
+}
+[2021-03-15T11:05:00.062] [ERROR] globalError - error Error: ER_DUP_ENTRY: Duplicate entry '33' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '33' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (33,0,0,'0','白色',STR_TO_DATE('2021-03-04',"%Y-%m-%d"),'0',0,'',11)`
+}
+[2021-03-15T11:14:32.707] [ERROR] globalError - err Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (44,0,0,'0','白色',STR_TO_DATE('202134',"%Y-%m-%d"),'0',0,'',)`
+}
+[2021-03-15T11:14:32.720] [ERROR] globalError - error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (44,0,0,'0','白色',STR_TO_DATE('202134',"%Y-%m-%d"),'0',0,'',)`
+}
+[2021-03-15T11:15:23.814] [ERROR] globalError - err Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (99,0,0,'0','白色',STR_TO_DATE('2021.5.6',"%Y-%m-%d"),'0',0,'',)`
+}
+[2021-03-15T11:15:23.826] [ERROR] globalError - error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (99,0,0,'0','白色',STR_TO_DATE('2021.5.6',"%Y-%m-%d"),'0',0,'',)`
+}
+[2021-03-15T11:15:49.332] [ERROR] globalError - err Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (99,0,0,'0','白色',STR_TO_DATE('2021-5-6',"%Y-%m-%d"),'0',0,'',)`
+}
+[2021-03-15T11:15:49.333] [ERROR] globalError - error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (99,0,0,'0','白色',STR_TO_DATE('2021-5-6',"%Y-%m-%d"),'0',0,'',)`
+}
+[2021-03-15T11:49:21.099] [ERROR] globalError - err Error: ER_WRONG_VALUE_FOR_TYPE: Incorrect datetime value: 'null' for function str_to_date
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertGestationModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:38:27)
+    at insertGestationInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:59:45)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_WRONG_VALUE_FOR_TYPE',
+  errno: 1411,
+  sqlMessage: "Incorrect datetime value: 'null' for function str_to_date",
+  sqlState: 'HY000',
+  index: 0,
+  sql: `INSERT INTO _gestation_info (cid,type,inoculateDay,dueTimeDay,describes) VALUES (1,'测试型号1',STR_TO_DATE('null',"%Y-%m-%d"),STR_TO_DATE('null',"%Y-%m-%d"),'测试')`
+}
+[2021-03-15T11:49:21.100] [ERROR] globalError - Error: ER_WRONG_VALUE_FOR_TYPE: Incorrect datetime value: 'null' for function str_to_date
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertGestationModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:38:27)
+    at insertGestationInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:59:45)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_WRONG_VALUE_FOR_TYPE',
+  errno: 1411,
+  sqlMessage: "Incorrect datetime value: 'null' for function str_to_date",
+  sqlState: 'HY000',
+  index: 0,
+  sql: `INSERT INTO _gestation_info (cid,type,inoculateDay,dueTimeDay,describes) VALUES (1,'测试型号1',STR_TO_DATE('null',"%Y-%m-%d"),STR_TO_DATE('null',"%Y-%m-%d"),'测试')`
+}
+[2021-03-15T12:46:41.074] [ERROR] globalError - err Error: ER_DUP_ENTRY: Duplicate entry '4' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '4' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (4,3,2,'1','黑白',STR_TO_DATE('2021-03-15',"%Y-%m-%d"),'0',0,'下牛犊了',50)`
+}
+[2021-03-15T12:46:41.088] [ERROR] globalError - error Error: ER_DUP_ENTRY: Duplicate entry '4' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '4' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (4,3,2,'1','黑白',STR_TO_DATE('2021-03-15',"%Y-%m-%d"),'0',0,'下牛犊了',50)`
+}
