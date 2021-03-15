@@ -69,7 +69,7 @@ class indexModel extends Model{
         if(results.result.length === 0){
             return {
                 code:1,
-                message:'录入成功'
+                message:'录入成功',
             };
         };      
 
