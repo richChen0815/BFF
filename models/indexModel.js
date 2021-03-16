@@ -45,7 +45,7 @@ class indexModel extends Model{
     async insertCattleModel(params){
         const {cid,pid,gid,sex,color,birth,resource,isEasy,describe,avator,weight} = {...params};
         console.log("🐮数据插入",params)
-        const insert = `INSERT INTO _cattle_info (cid,pid,gid,sex,color,birth,resource,isEasy,describes,weight) VALUES (${cid},${pid},${gid},'${sex}','${color}',STR_TO_DATE('${birth}',"%Y-%m-%d"),'${resource}',${isEasy},'${describe}',${weight})`;
+        const insert = `INSERT INTO _cattle_info (cid,pid,gid,avator,sex,color,birth,resource,isEasy,describes,weight) VALUES (${cid},${pid},${gid},'${avator}','${sex}','${color}',STR_TO_DATE('${birth}',"%Y-%m-%d"),'${resource}',${isEasy},'${describe}',${weight})`;
         let res;
         try{
            res = await query(insert);

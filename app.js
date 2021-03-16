@@ -57,6 +57,8 @@ app.use(staticServe(config.staticDir));
 
 
 
+
+
 // 错误处理
 initError(app);
 

@@ -1,0 +1,156 @@
+[2021-03-16T13:57:41.536] [ERROR] globalError - err Error: ER_DATA_TOO_LONG: Data too long for column 'avator' at row 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DATA_TOO_LONG',
+  errno: 1406,
+  sqlMessage: "Data too long for column 'avator' at row 1",
+  sqlState: '22001',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,avator,sex,color,birth,resource,isEasy,describes,weight) VALUES (11,0,0,'page-1-课程表-1615874225917.png','0','红',STR_TO_DATE('2018-09-11',"%Y-%m-%d"),'1',0,'公共',100)`
+}
+[2021-03-16T13:57:41.538] [ERROR] globalError - error Error: ER_DATA_TOO_LONG: Data too long for column 'avator' at row 1
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DATA_TOO_LONG',
+  errno: 1406,
+  sqlMessage: "Data too long for column 'avator' at row 1",
+  sqlState: '22001',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,avator,sex,color,birth,resource,isEasy,describes,weight) VALUES (11,0,0,'page-1-课程表-1615874225917.png','0','红',STR_TO_DATE('2018-09-11',"%Y-%m-%d"),'1',0,'公共',100)`
+}
+[2021-03-16T14:27:51.587] [ERROR] globalError - err Error: ER_DUP_ENTRY: Duplicate entry '11' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '11' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,avator,sex,color,birth,resource,isEasy,describes,weight) VALUES (11,0,0,'page-1-画板备份-2-1615876066602.png','1','测试',STR_TO_DATE('2020-05-04',"%Y-%m-%d"),'1',0,'测试',120)`
+}
+[2021-03-16T14:27:51.590] [ERROR] globalError - error Error: ER_DUP_ENTRY: Duplicate entry '11' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+    --------------------
+    at Protocol._enqueue (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/xiaoquan/Desktop/BFF/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:198:25)
+    at /Users/xiaoquan/Desktop/BFF/utils/connectSql.js:14:20
+    at new Promise (<anonymous>)
+    at query (/Users/xiaoquan/Desktop/BFF/utils/connectSql.js:5:12)
+    at indexModel.insertCattleModel (/Users/xiaoquan/Desktop/BFF/models/indexModel.js:51:24)
+    at insertCattleInfo (/Users/xiaoquan/Desktop/BFF/controller/indexController.js:26:44)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:372:16
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-router@10.0.0@koa-router/lib/router.js:377:31)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:15)
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '11' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: `INSERT INTO _cattle_info (cid,pid,gid,avator,sex,color,birth,resource,isEasy,describes,weight) VALUES (11,0,0,'page-1-画板备份-2-1615876066602.png','1','测试',STR_TO_DATE('2020-05-04',"%Y-%m-%d"),'1',0,'测试',120)`
+}
