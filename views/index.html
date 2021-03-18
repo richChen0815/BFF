@@ -18,5 +18,44 @@
         <p><input type="file" name="file" /></p>
         <p><input type="submit" value="Submit"></p>
     </form>
+    <!-- 浏览器支持module -->
+    <script module>
+        import("./frontEnd/data.js").then(res=>{
+            console.log('es',res);
+        })
+    </script>
+    <script>
+        // 防止同时加载2份代码
+        (function() {
+            var check = document.createElement('script');
+            console.log("check",check);
+            if (!('noModule' in check) && 'onbeforeload' in check) {
+                var support = false;
+                document.addEventListener('beforeload', function(e) {
+                if (e.target === check) {
+                    support = true;
+                } else if (!e.target.hasAttribute('nomodule') || !support) {
+                    return;
+                }
+                e.preventDefault();
+                }, true);
+
+                check.type = 'module';
+                check.src = '.';
+                document.head.appendChild(check);
+                check.remove();
+            }
+            }());
+    </script>
+    <script nomodule  src="https://cdn.bootcdn.net/ajax/libs/systemjs/6.7.1/system.min.js"></script>
+    <script nomodule >
+        System.import('./frontEnd/data.js').then(res=>{
+            console.log('SystemJS',res);
+        });
+    </script>
+
+    
+
+
 </body>
 </html>

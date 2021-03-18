@@ -74,6 +74,8 @@ process.on("unhandledRejection",(res,err)=>{
 })
 
 
-app.listen(config.port,(err,data)=>{
+module.exports = app.listen(config.port,(err,data)=>{
     console.log(`port ${config.port} start`)
 })
+
+//module.exports = app.listen(config.port);
