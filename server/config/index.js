@@ -13,8 +13,8 @@ const devConfig = {
 
 
 let baseConfig = {
-    viewsDir:path.join(__dirname,'./../views/'),
-    staticDir:path.join(__dirname,'./../public/'),
+    viewsDir:path.join(__dirname,'./../../client/views/'),
+    staticDir:path.join(__dirname,'./../../client/public/'),
     dataBase:{
          host:'106.15.238.244',
          user:'root',
@@ -22,7 +22,7 @@ let baseConfig = {
          port:'3306',        
          database:'cattle',
      },
-     uploadDir:path.join(__dirname,'./../public/uploads/'),
+     uploadDir:path.join(__dirname,'./../../client/public/uploads/'),
      originUrl:`http://106.15.238.244:${(process.env.NODE_MODE === 'production') ? proConfig.port : devConfig.port}`,
      localUrl:`http://localhost:${(process.env.NODE_MODE === 'production') ? proConfig.port : devConfig.port}`,
  };

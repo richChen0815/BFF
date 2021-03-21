@@ -1,2 +1,2 @@
-import test from './utils/index';
+import test from './server/utils/index';
 test();

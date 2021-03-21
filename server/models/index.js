@@ -1,5 +1,5 @@
 
-const {query} = require("./../utils/connectSql")
+const {query} = require("../utils/connectSql")
 const httpAjax = require("../utils/httpRequest")
 
 console.log("query",query)

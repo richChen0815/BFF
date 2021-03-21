@@ -1,5 +1,5 @@
 const Controller  = require("./controller");
-const indexModel = require("./../models/indexModel");
+const indexModel = require("../models/indexModel");
 const request = require("request");
 const ModelInstance = new indexModel();
 

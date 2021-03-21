@@ -5,7 +5,7 @@ const indexController = require("./indexController");
 
 const indexInstance =  new indexController() ;
 
-const {config} = require("./../config");
+const {config} = require("../config");
 
 
 // 文件上传模块
