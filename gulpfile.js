@@ -7,8 +7,8 @@ gulp.task('default',function(){
     .pipe(uglify())
     .pipe(rename({
         basename: "app",
-       // prefix: "min",
-        suffix: ".min",
+        // prefix: "min",
+        suffix: ".min", 
         extname: ".js"
     }))
     .pipe(gulp.dest("./server/"))
