@@ -2,8 +2,8 @@
 const log4js  = require("log4js");
 log4js.configure({
     appenders: { 
-        "globalError": { type: "file", filename: `log/logError-${new Date().toLocaleDateString()}.log`},
-        "out":{type: "file", filename: `log/info-${new Date().toLocaleDateString()}.log` }
+        "globalError": { type: "file", filename: `server/log/logError-${new Date().toLocaleDateString()}.log`},
+        "out":{type: "file", filename: `server/log/info-${new Date().toLocaleDateString()}.log` }
     },
     categories: { 
        // "globalError": { appenders: ["globalError"], level: "error" },

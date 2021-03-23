@@ -1,6 +1,6 @@
 const mysql = require("mysql");
-const {logError,logger} = require('./../utils/log');
-const {config} =  require("./../config/index");
+const {logError,logger} = require('./log');
+const {config} =  require("../config/index");
 function query(sql,params,callback){
     return new Promise((resolve,reject)=>{
         const mysqlBase = mysql.createConnection(config.dataBase);

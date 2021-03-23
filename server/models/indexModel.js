@@ -1,5 +1,5 @@
 const Model = require("./index");
-const {query} = require("./../utils/connectSql")
+const {query} = require("../utils/connectSql")
 const httpAjax = require("../utils/httpRequest");
 const { logError } = require("../utils/log");
 /**

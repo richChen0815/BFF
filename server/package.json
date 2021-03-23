@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "yargs": "^16.2.0"
+  }
+}

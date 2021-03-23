@@ -43,3 +43,19 @@
     如果将来要分离client 和 server  上传写入图片路径 需要写到server 文件夹中。
 
 
+## 开始client webpack 抒写
+
+
+
+## gulp  
+    编译node工程
+
+    使用gulp能不能不改变文件的引用。只改文字，输出到目录下面
+    解决: 可以不写文件名
+
+    gulp-rename:https://blog.csdn.net/guang_s/article/details/84861940
+
+
+## plugin 手写
+
+    

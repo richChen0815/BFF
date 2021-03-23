@@ -11,9 +11,10 @@ const devConfig = {
     port:'3000'
 };
 
-
+console.log("viewsDir",path.join(__dirname,'./../../client/views/'))
 let baseConfig = {
     viewsDir:path.join(__dirname,'./../../client/views/'),
+    //静态资源访问路径: http://localhost:3000/frontEnd/data.js
     staticDir:path.join(__dirname,'./../../client/public/'),
     dataBase:{
          host:'106.15.238.244',
