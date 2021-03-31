@@ -45,6 +45,7 @@
     "co-body": "^6.1.0",
     "copy-to": "^2.0.1",
     "cross-env": "^7.0.3",
+    "easy-monitor": "^2.2.8",
     "inflation": "^2.0.0",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",

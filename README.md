@@ -1,4 +1,13 @@
 # BFF
+    bff架构的意义
+        1.后端向性能,基础服务,云方向下沉。这个时候node 的价值完全能体现出,接口改造,更加贴近C端业务。
+        2.node 完全可以hold住千万PV,大流量qbs. 
+        3.上手快 生态 高并发等。。。。
+
+        问题: 需要node 性能监控工具
+
+
+    链接地址: https://blog.csdn.net/weixin_39973410/article/details/111679475
 
 
 ## node commonjs ---> es module
@@ -48,12 +57,26 @@
 
 
 ## gulp  
-    编译node工程
+    what:基于流式stream 打包工具
 
-    使用gulp能不能不改变文件的引用。只改文字，输出到目录下面
-    解决: 可以不写文件名
+    why:
+        优缺点
+        能开发基于stream插件
+        周边插件
 
-    gulp-rename:https://blog.csdn.net/guang_s/article/details/84861940
+
+    how:
+
+        使用gulp能不能不改变文件的引用。只改文字，输出到目录下面
+        解决: 可以不写文件名
+
+        gulp.task()
+        gulp.src()
+        pipe();
+
+        插件集合:
+
+                gulp-rename:https://blog.csdn.net/guang_s/article/details/84861940
 
 
 ## plugin 手写

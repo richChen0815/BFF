@@ -2,6 +2,10 @@ const koa = require("koa");
 const app = new koa();
 const {config} = require('./config');
 
+// 性能监控
+const easyMonitor = require("easy-monitor");
+easyMonitor("BFF");
+
 //swig页面模版注册(ctx.body可以吐html 字符串 不方便)
 const co = require("co");
 const render = require("koa-swig");
