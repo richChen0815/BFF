@@ -1,0 +1,175 @@
+[2021-05-06T18:34:53.484] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293481.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293481.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.497] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293477.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293477.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.502] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293489.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293489.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.503] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293492.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293492.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.504] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293494.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293494.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.505] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293496.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293496.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.506] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293501.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293501.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.513] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293507.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293507.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.515] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293509.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293509.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.516] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293510.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293510.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.519] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293512.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293512.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.520] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293517.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293517.blob',
+  storageErrors: []
+}
+[2021-05-06T18:34:53.521] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293519.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297293519.blob',
+  storageErrors: []
+}
+[2021-05-06T18:35:48.438] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297348436.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297348436.blob',
+  storageErrors: []
+}
+[2021-05-06T18:35:48.442] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297348432.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297348432.blob',
+  storageErrors: []
+}
+[2021-05-06T18:39:04.059] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544054.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544054.blob',
+  storageErrors: []
+}
+[2021-05-06T18:39:04.064] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544058.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544058.blob',
+  storageErrors: []
+}
+[2021-05-06T18:39:04.070] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544062.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544062.blob',
+  storageErrors: []
+}
+[2021-05-06T18:39:04.072] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544063.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544063.blob',
+  storageErrors: []
+}
+[2021-05-06T18:39:04.078] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544067.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544067.blob',
+  storageErrors: []
+}
+[2021-05-06T18:39:04.079] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544071.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544071.blob',
+  storageErrors: []
+}
+[2021-05-06T18:39:04.083] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544077.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544077.blob',
+  storageErrors: []
+}
+[2021-05-06T18:39:04.100] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544074.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544074.blob',
+  storageErrors: []
+}
+[2021-05-06T18:39:04.100] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544081.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544081.blob',
+  storageErrors: []
+}
+[2021-05-06T18:39:04.101] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544082.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544082.blob',
+  storageErrors: []
+}

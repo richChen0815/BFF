@@ -1,0 +1,45 @@
+[2021-05-05T23:36:43.517] [ERROR] globalError - TypeError [ERR_INVALID_ARG_TYPE]: The "newPath" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.rename (fs.js:720:13)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:59:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021-05-05T23:36:43.525] [ERROR] globalError - TypeError [ERR_INVALID_ARG_TYPE]: The "newPath" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.rename (fs.js:720:13)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:59:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021-05-05T23:36:43.526] [ERROR] globalError - TypeError [ERR_INVALID_ARG_TYPE]: The "newPath" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.rename (fs.js:720:13)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:59:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021-05-05T23:50:41.389] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202155/blob-1620229841388.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202155/blob-1620229841388.blob',
+  storageErrors: []
+}
+[2021-05-05T23:50:41.394] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202155/blob-1620229841385.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202155/blob-1620229841385.blob',
+  storageErrors: []
+}
+[2021-05-05T23:50:41.395] [ERROR] globalError - [Error: ENOENT: no such file or directory, open '/Users/xiaoquan/Desktop/BFF/public/uploads/202155/blob-1620229841392.blob'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202155/blob-1620229841392.blob',
+  storageErrors: []
+}
