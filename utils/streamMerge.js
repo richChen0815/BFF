@@ -79,13 +79,59 @@ function exitsFolder(filePath){
     });
 }
 
+/**
+ *  @description 文件夹创建
+ *  @params {String} folderName
+ * **/
+function mkdirSync(folderName){
+    fs.mkdirSync(folderName);
+}
+
+
+/**
+ *  @description 文件删除
+ *  @params {String} filePath
+ * **/
+function unlinkSync(filePath){
+    console.log('unlinkSync',filePath)
+    fs.unlinkSync(filePath);
+}
+
+
+
+/**
+ *  @description 文件重命名
+ *  @params {String} folderName
+ * **/
+function renameSync(oldName, newName){
+    fs.renameSync(oldName, newName);
+}
+
+/**
+ *  @description 文件复制
+ *  @params {String} folderName
+ * **/
+ function copy(readPath, writePath){
+   console.log('readPath',readPath,'writePath',writePath);
+   // 创建读取流
+   const ReadStream = fs.createReadStream(readPath);
+   // 创建写入流
+   const WriteStream = fs.createWriteStream(writePath);
+   ReadStream.pipe(WriteStream);
+}
+
+
 
 
 
 module.exports = {
     streamMergeRecursive,
     exitsFolder,
-    exitsDirectory
+    exitsDirectory,
+    mkdirSync,
+    unlinkSync,
+    renameSync,
+    copy
 }
 
 
