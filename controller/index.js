@@ -68,10 +68,13 @@ function initRouter(app){
         //文件复制
         const readStream = newPath,writeStream = resolve(__dirname,config.uploadDir+hash+"-folder/"+name);
         copy(readStream,writeStream);
-        // 文件删除
-        unlinkSync(resolve(newPath));
+        // 文件删除 必须是异步的 否则会报错
+        setTimeout(()=>{
+            unlinkSync(resolve(newPath));
+        },500);
+      
         // 重写文件名
-        ctx.body = ctx.req.file.filename;
+        ctx.body = config.uploadDir+hash+"-folder/"+name;
     });
 
 
@@ -80,7 +83,7 @@ function initRouter(app){
        console.log('--------------',ctx.request.body);
         const { hash, ext } = ctx.request.body;
        // 读取文件
-       const dest   = config.uploadDir + new Date().getFullYear() + (new Date().getMonth()+1) + new Date().getDate() ;
+       const dest   = config.uploadDir+hash+"-folder/";  ;
        console.log("dest",dest);
        setTimeout(()=>{
             const sourceFileArr = fs.readdirSync(dest);

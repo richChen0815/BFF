@@ -93,11 +93,8 @@ function mkdirSync(folderName){
  *  @params {String} filePath
  * **/
 function unlinkSync(filePath){
-    console.log('unlinkSync',filePath)
     fs.unlinkSync(filePath);
 }
-
-
 
 /**
  *  @description 文件重命名
