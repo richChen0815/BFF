@@ -9,7 +9,13 @@ const {config} = require("./../config");
 const fs = require("fs");
 const {resolve} = require("path");
 
-const { streamMergeRecursive } =  require('../utils/streamMerge');
+const {  streamMergeRecursive,
+    exitsFolder,
+    exitsDirectory,
+    mkdirSync,
+    unlinkSync,
+    renameSync,
+    copy } =  require('../utils/streamMerge');
 
 
 // 文件上传模块
@@ -24,18 +30,9 @@ const storage = multer.diskStorage({
 });
 const upload = multer({storage:storage});
 
-// 文件切片
-const storage2 = multer.diskStorage({
-    destination:config.uploadDir + new Date().getFullYear() + (new Date().getMonth()+1) + new Date().getDate(),
-    filename:function(ctx,file,cb){
-     // console.log('ctx-----',ctx.req.body.name);
-      const filenameArr = file.originalname.split('.');
-      cb(null,filenameArr[0] + '-' + Date.now() + '.' + filenameArr[filenameArr.length-1]);
-    }
-});
 
-const upload2 = multer({storage:storage2});
 
+const upload2 = multer({dest:config.uploadDir});
 
 function initRouter(app){
 
@@ -54,11 +51,25 @@ function initRouter(app){
     router.post("/uploadChunk", upload2.single('file'),async (ctx)=>{
         console.log('ctx.request.file', ctx.req.file);
         console.log('ctx.req', ctx.req.body);
-        // console.log('ctx.request.body', ctx.request.body);
-        // 源文件名   目标名称
-        const sourceFile = config.uploadDir + new Date().getFullYear() + (new Date().getMonth()+1) + new Date().getDate() + '/' + ctx.req.file.filename;
-        const newSource = config.uploadDir + new Date().getFullYear() + (new Date().getMonth()+1) + new Date().getDate() + '/' + ctx.req.body.name;
-        console.log("sourceFile",sourceFile,'newSource',newSource)
+  
+        const {hash,name} =  ctx.req.body;
+
+        //判断是否是文件夹
+        //如果不是 创建文件夹
+        const  directoryPath = resolve(__dirname,config.uploadDir+hash+"-folder");
+        if(exitsFolder(directoryPath)){
+        }else{
+            mkdirSync(directoryPath);
+        };
+
+
+       
+        //获取文件名 重命名
+        //文件复制
+        // 文件删除
+
+
+        return;
         fs.rename(sourceFile,newSource,function(err){
             if(err){
                 console.log("文件失败",err);
