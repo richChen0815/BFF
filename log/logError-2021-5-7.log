@@ -1,0 +1,84 @@
+[2021-05-07T14:50:17.811] [ERROR] globalError - TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:120:11)
+    at resolve (path.js:980:7)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:66:30
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021-05-07T14:50:17.819] [ERROR] globalError - TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:120:11)
+    at resolve (path.js:980:7)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:66:30
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021-05-07T14:50:17.820] [ERROR] globalError - TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:120:11)
+    at resolve (path.js:980:7)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:66:30
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021-05-07T14:51:07.964] [ERROR] globalError - TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:120:11)
+    at resolve (path.js:980:7)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:66:30
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021-05-07T14:52:01.692] [ERROR] globalError - TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:120:11)
+    at resolve (path.js:980:7)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:66:30
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021-05-07T14:54:21.621] [ERROR] globalError - Error: ENOENT: no such file or directory, rename '/Users/xiaoquan/Desktop/BFF/public/uploads/undefined' -> '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:2'
+    at Object.renameSync (fs.js:734:3)
+    at renameSync (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:107:8)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:9
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'rename',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/undefined',
+  dest: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:2'
+}
+[2021-05-07T14:54:21.628] [ERROR] globalError - Error: ENOENT: no such file or directory, rename '/Users/xiaoquan/Desktop/BFF/public/uploads/undefined' -> '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:0'
+    at Object.renameSync (fs.js:734:3)
+    at renameSync (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:107:8)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:9
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'rename',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/undefined',
+  dest: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:0'
+}
+[2021-05-07T14:54:21.630] [ERROR] globalError - Error: ENOENT: no such file or directory, rename '/Users/xiaoquan/Desktop/BFF/public/uploads/undefined' -> '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:1'
+    at Object.renameSync (fs.js:734:3)
+    at renameSync (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:107:8)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:9
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'rename',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/undefined',
+  dest: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:1'
+}

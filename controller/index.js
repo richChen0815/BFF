@@ -51,27 +51,24 @@ function initRouter(app){
     router.post("/uploadChunk", upload2.single('file'),async (ctx)=>{
         console.log('ctx.request.file', ctx.req.file);
         console.log('ctx.req', ctx.req.body);
-  
+       
         const {hash,name} =  ctx.req.body;
 
         //判断是否是文件夹
         //如果不是 创建文件夹
         const  directoryPath = resolve(__dirname,config.uploadDir+hash+"-folder");
-        if(exitsFolder(directoryPath)){
-        }else{
-            mkdirSync(directoryPath);
-        };
+        if(!exitsFolder(directoryPath)) mkdirSync(directoryPath);
 
         //获取文件名 重命名
-        const resourcePath = resolve(__dirname,ctx.req.file.name);
-
-        const newPath = resolve(__dirname,name);
+        const resourcePath = resolve(__dirname,config.uploadDir+ctx.req.file.filename);
+        const newPath = resolve(__dirname,config.uploadDir+name);
+        console.log("resourcePath",resourcePath,"newPath",newPath)
         renameSync(resourcePath,newPath);
 
         //文件复制
+        const readStream = newPath,writeStream = resolve(__dirname,config.uploadDir+hash+"-folder/"+name);
+        copy(readStream,writeStream);
         // 文件删除
-
-
         return;
         fs.rename(sourceFile,newSource,function(err){
             if(err){
