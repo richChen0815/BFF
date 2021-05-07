@@ -69,14 +69,7 @@ function initRouter(app){
         const readStream = newPath,writeStream = resolve(__dirname,config.uploadDir+hash+"-folder/"+name);
         copy(readStream,writeStream);
         // 文件删除
-        return;
-        fs.rename(sourceFile,newSource,function(err){
-            if(err){
-                console.log("文件失败",err);
-            }else{
-                console.log("文件成功");
-            };
-        });
+        unlinkSync(resolve(newPath));
         // 重写文件名
         ctx.body = ctx.req.file.filename;
     });
