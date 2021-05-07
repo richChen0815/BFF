@@ -1,0 +1,241 @@
+[2021-05-07T00:07:50.488] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:0'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:0'
+}
+[2021-05-07T00:07:50.495] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:1'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at runNextTicks (internal/process/task_queues.js:62:5)
+    at processImmediate (internal/timers.js:429:9)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:1'
+}
+[2021-05-07T00:07:50.496] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:2'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at runNextTicks (internal/process/task_queues.js:62:5)
+    at processImmediate (internal/timers.js:429:9)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:2'
+}
+[2021-05-07T00:07:50.498] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:3'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at runNextTicks (internal/process/task_queues.js:62:5)
+    at processImmediate (internal/timers.js:429:9)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:3'
+}
+[2021-05-07T00:07:50.500] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:4'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:4'
+}
+[2021-05-07T00:07:50.505] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:5'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:5'
+}
+[2021-05-07T00:07:50.532] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:7'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:7'
+}
+[2021-05-07T00:07:50.533] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:6'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads//2f1e861d563b5782f9dcd23ac8b98a38:6'
+}
+[2021-05-07T00:10:18.977] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:0'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:0'
+}
+[2021-05-07T00:11:02.008] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:0'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:0'
+}
+[2021-05-07T00:11:02.026] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:1'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:1'
+}
+[2021-05-07T00:11:02.039] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:2'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:2'
+}
+[2021-05-07T00:11:02.050] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:4'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:4'
+}
+[2021-05-07T00:11:02.057] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:3'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at runNextTicks (internal/process/task_queues.js:62:5)
+    at processImmediate (internal/timers.js:429:9)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:3'
+}
+[2021-05-07T00:11:02.062] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:5'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:5'
+}
+[2021-05-07T00:11:02.097] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:7'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:7'
+}
+[2021-05-07T00:11:02.106] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:6'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:89:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:6'
+}
+[2021-05-07T00:11:53.053] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:0'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:90:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at runNextTicks (internal/process/task_queues.js:62:5)
+    at processImmediate (internal/timers.js:429:9)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:0'
+}
+[2021-05-07T00:11:53.058] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:3'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:90:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:3'
+}
+[2021-05-07T00:11:53.062] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:1'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:90:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:1'
+}
+[2021-05-07T00:11:53.064] [ERROR] globalError - Error: ENOTDIR: not a directory, rmdir '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:2'
+    at Object.rmdirSync (fs.js:843:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:90:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -20,
+  syscall: 'rmdir',
+  code: 'ENOTDIR',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:2'
+}

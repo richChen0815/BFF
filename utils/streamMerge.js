@@ -42,8 +42,50 @@ function streamMergeRecursive(arr = [], writeStream , sourceFile ){
 }
 
 
+
+/**
+ *   @describe 判断文件是否存在 不存在 创建 存在 啥也不干
+ *   @params {String} filePath 
+ * **/
+
+function exitsFolder(filePath){
+    console.log('文件夹是否存在',fs.existsSync(filePath))
+    let  exits = fs.existsSync(filePath) ? true : false;
+    return exits;  
+}
+
+/**
+ *   @describe 判断文件夹是否存在 不存在 创建 存在 啥也不干
+ *   @params {String} filePath 
+ * **/
+
+ function exitsDirectory(filePath){
+    console.log('filePath',filePath)
+    return new Promise((resolve,reject)=>{
+        try{
+            let  stat = fs.statSync(filePath) ;
+            console.log("stat",stat);
+            console.log('文件夹是否存在',stat.isDirectory());
+            if(stat.isDirectory()){
+                resolve(true) ;
+            }else{
+                resolve(false) ;
+            }
+        }catch(e){
+            reject(e)
+        }
+       
+      
+    });
+}
+
+
+
+
 module.exports = {
-    streamMergeRecursive
+    streamMergeRecursive,
+    exitsFolder,
+    exitsDirectory
 }
 
 

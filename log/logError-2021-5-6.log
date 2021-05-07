@@ -173,3 +173,174 @@
   path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/blob-1620297544082.blob',
   storageErrors: []
 }
+[2021-05-06T23:15:03.214] [ERROR] globalError - Error: ENOENT: no such file or directory, stat '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+    at Object.statSync (fs.js:1009:3)
+    at exitsDirectory (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:64:20)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:30
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'stat',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+}
+[2021-05-06T23:17:11.032] [ERROR] globalError - Error: ENOENT: no such file or directory, stat '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+    at Object.statSync (fs.js:1009:3)
+    at exitsDirectory (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:64:20)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:30
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'stat',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+}
+[2021-05-06T23:17:11.039] [ERROR] globalError - Error: ENOENT: no such file or directory, stat '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+    at Object.statSync (fs.js:1009:3)
+    at exitsDirectory (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:64:20)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:30
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'stat',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+}
+[2021-05-06T23:17:11.041] [ERROR] globalError - Error: ENOENT: no such file or directory, stat '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+    at Object.statSync (fs.js:1009:3)
+    at exitsDirectory (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:64:20)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:30
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'stat',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+}
+[2021-05-06T23:20:02.983] [ERROR] globalError - Error: ENOENT: no such file or directory, stat '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+    at Object.statSync (fs.js:1009:3)
+    at /Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:65:24
+    at new Promise (<anonymous>)
+    at exitsDirectory (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:64:12)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:35
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at runNextTicks (internal/process/task_queues.js:62:5)
+    at processImmediate (internal/timers.js:429:9)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'stat',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+}
+[2021-05-06T23:20:02.985] [ERROR] globalError - Error: ENOENT: no such file or directory, stat '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+    at Object.statSync (fs.js:1009:3)
+    at /Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:65:24
+    at new Promise (<anonymous>)
+    at exitsDirectory (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:64:12)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:35
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'stat',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+}
+[2021-05-06T23:20:02.987] [ERROR] globalError - Error: ENOENT: no such file or directory, stat '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+    at Object.statSync (fs.js:1009:3)
+    at /Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:65:24
+    at new Promise (<anonymous>)
+    at exitsDirectory (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:64:12)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:35
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'stat',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+}
+[2021-05-06T23:20:02.988] [ERROR] globalError - Error: ENOENT: no such file or directory, stat '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+    at Object.statSync (fs.js:1009:3)
+    at /Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:65:24
+    at new Promise (<anonymous>)
+    at exitsDirectory (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:64:12)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:35
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'stat',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38'
+}
+[2021-05-06T23:22:59.208] [ERROR] globalError - ReferenceError: filePathfilePath is not defined
+    at exitsDirectory (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:64:28)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:35
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5)
+[2021-05-06T23:22:59.214] [ERROR] globalError - ReferenceError: filePathfilePath is not defined
+    at exitsDirectory (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:64:28)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:35
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5)
+[2021-05-06T23:22:59.214] [ERROR] globalError - ReferenceError: filePathfilePath is not defined
+    at exitsDirectory (/Users/xiaoquan/Desktop/BFF/utils/streamMerge.js:64:28)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:71:35
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5)
+[2021-05-06T23:25:18.504] [ERROR] globalError - ReferenceError: isDirectory is not defined
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:79:9
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5)
+[2021-05-06T23:25:18.511] [ERROR] globalError - ReferenceError: isDirectory is not defined
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:79:9
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5)
+[2021-05-06T23:25:18.515] [ERROR] globalError - ReferenceError: isDirectory is not defined
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:79:9
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5)
+[2021-05-06T23:25:41.752] [ERROR] globalError - ReferenceError: isDirectory is not defined
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:79:9
+[2021-05-06T23:25:41.759] [ERROR] globalError - ReferenceError: isDirectory is not defined
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:79:9
+[2021-05-06T23:25:41.764] [ERROR] globalError - ReferenceError: isDirectory is not defined
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:79:9
+    at runNextTicks (internal/process/task_queues.js:62:5)
+    at processImmediate (internal/timers.js:429:9)
+[2021-05-06T23:25:41.769] [ERROR] globalError - ReferenceError: isDirectory is not defined
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:79:9
+[2021-05-06T23:25:41.774] [ERROR] globalError - ReferenceError: isDirectory is not defined
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:79:9
+    at runNextTicks (internal/process/task_queues.js:62:5)
+    at processImmediate (internal/timers.js:429:9)
+[2021-05-06T23:25:41.778] [ERROR] globalError - ReferenceError: isDirectory is not defined
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:79:9
+[2021-05-06T23:25:41.797] [ERROR] globalError - ReferenceError: isDirectory is not defined
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:79:9
+[2021-05-06T23:25:41.799] [ERROR] globalError - ReferenceError: isDirectory is not defined
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:79:9
+[2021-05-06T23:43:23.928] [ERROR] globalError - Error: ENOENT: no such file or directory, rename '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/a47c400a50f95e70ccb5642fbf7c4458' -> '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/2f1e861d563b5782f9dcd23ac8b98a38:0'
+    at Object.renameSync (fs.js:734:3)
+    at /Users/xiaoquan/Desktop/BFF/controller/index.js:78:12
+    at dispatch (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at async cors (/Users/xiaoquan/Desktop/BFF/node_modules/_koa2-cors@2.0.6@koa2-cors/dist/index.js:91:9)
+    at async bodyParser (/Users/xiaoquan/Desktop/BFF/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5) {
+  errno: -2,
+  syscall: 'rename',
+  code: 'ENOENT',
+  path: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/a47c400a50f95e70ccb5642fbf7c4458',
+  dest: '/Users/xiaoquan/Desktop/BFF/public/uploads/202156/2f1e861d563b5782f9dcd23ac8b98a38:0'
+}
