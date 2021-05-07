@@ -62,9 +62,12 @@ function initRouter(app){
             mkdirSync(directoryPath);
         };
 
-
-       
         //获取文件名 重命名
+        const resourcePath = resolve(__dirname,ctx.req.file.name);
+
+        const newPath = resolve(__dirname,name);
+        renameSync(resourcePath,newPath);
+
         //文件复制
         // 文件删除
 
