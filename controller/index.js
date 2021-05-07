@@ -57,7 +57,11 @@ function initRouter(app){
         //判断是否是文件夹
         //如果不是 创建文件夹
         const  directoryPath = resolve(__dirname,config.uploadDir+hash+"-folder");
-        if(!exitsFolder(directoryPath)) mkdirSync(directoryPath);
+        if(!exitsFolder(directoryPath)){
+            mkdirSync(directoryPath)
+        }else{
+           console.log("存在文件夹")
+        } ;
 
         //获取文件名 重命名
         const resourcePath = resolve(__dirname,config.uploadDir+ctx.req.file.filename);
@@ -92,17 +96,45 @@ function initRouter(app){
             //合并文件 参考资料 //https://zhuanlan.zhihu.com/p/131627741
             //fs.createWriteStream 不会创建不存在的文件夹
             const fileWriteStream = fs.createWriteStream(resolve(dest,hash+'.'+ext)); // 创建一个可读写的流 
-          //  console.log('fileWriteStream',fileWriteStream) ;      
+            //  console.log('fileWriteStream',fileWriteStream) ;      
             streamMergeRecursive(sourceFileArr, fileWriteStream , dest );
        },1000);
        // 按切片顺序排序
        ctx.body = "ok"
     });
 
-    /**
-     *  @describe  返回服务器已存在文件
-     *  
+     /**
+     *  @describe  实现秒传功能
+     *  @params {String} hash
+     *  @params {String} ext
      * **/
+    router.post("/check",async(ctx)=>{
+        console.log("ctx---check",ctx.request.body);
+        const {hash, ext} = ctx.request.body;
+        // 先判断是否存在文件目录
+        const  directoryPath = resolve(__dirname,config.uploadDir+hash+"-folder");
+        let exitsFolderFlag = false ,exitsFileFlag = false, exitsFolderFiles = [];
+        if(exitsFolder(directoryPath)){
+            exitsFolderFlag = true;
+            // 在判断文件目录下是否有hash + ext
+             writeStream = resolve(__dirname,config.uploadDir+hash+"-folder/"+hash+'.'+ext);
+             console.log("是否存在文件",writeStream);
+             if(exitsFolder(writeStream)){
+                exitsFileFlag = true
+             }else{
+                exitsFolderFiles = fs.readdirSync(directoryPath);
+                exitsFolderFiles =  exitsFolderFiles.filter(mp=>mp[0]!=='.');
+             };
+        }else{
+
+        };
+        ctx.body = {
+            exitsFolder: exitsFolderFlag,
+            exitsFile:exitsFileFlag,
+            exitsFolderFiles : exitsFolderFiles
+        };
+
+    })
 
     
 

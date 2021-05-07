@@ -82,3 +82,75 @@
   path: '/Users/xiaoquan/Desktop/BFF/public/uploads/undefined',
   dest: '/Users/xiaoquan/Desktop/BFF/public/uploads/2f1e861d563b5782f9dcd23ac8b98a38:1'
 }
+[2021-05-07T15:55:35.036] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
+[2021-05-07T15:55:35.056] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
+[2021-05-07T15:55:35.057] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
+[2021-05-07T15:58:14.786] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
+[2021-05-07T15:58:14.789] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
+[2021-05-07T15:58:14.790] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
+[2021-05-07T15:59:18.538] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
+[2021-05-07T15:59:18.540] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
+[2021-05-07T15:59:18.542] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
+[2021-05-07T16:00:30.938] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
+[2021-05-07T16:00:30.947] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
+[2021-05-07T16:00:30.967] [ERROR] globalError - [Error: ENOSPC: no space left on device, write] {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write',
+  storageErrors: []
+}
